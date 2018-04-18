@@ -15,7 +15,6 @@ import java.util.*;
 
 public class StudentServiceImpl implements StudentService {
     private Jedis jedis;
-    private static String LNAME = "stu_info";
     private static String STU_SORT = "zstu";//zset的key
     private SimpleDateFormat sp = new SimpleDateFormat("yyyy-MM-dd");
 
