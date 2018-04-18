@@ -8,7 +8,7 @@ public class Student implements Comparable<Student> {
     private String stu_name;//学生名字
     private Date stu_birthday;//出生日期
     private String description;//描述
-    private int avgscore;//平均分数
+    private int avgscore;//平均分
 
     public Student(String stu_id, String stu_name, Date stu_birthday, String description, int avgscore) {
         this.stu_id = stu_id;
