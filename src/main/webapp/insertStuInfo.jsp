@@ -11,6 +11,7 @@
     <title>添加信息</title>
     <script src="jQuery/jquery-1.8.3.js"></script>
     <script type="text/javascript">
+
         $(function(){
             $("#name").blur(function () {
                 var name = $("#name").val();
