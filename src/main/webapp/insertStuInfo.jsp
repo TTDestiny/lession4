@@ -45,7 +45,7 @@
                     $("#birmsg").html("");
                 }
             });
-            //失去焦点后的平均分数的基本验证
+            //失去焦点
             $("#avg").blur(function () {
                 var name = $("#avg").val();
                 var gex =/^[0-9]{1,3}$/;
