@@ -16,7 +16,7 @@ import java.util.*;
 public class StudentServiceImpl implements StudentService {
     private Jedis jedis;
     private static String LNAME = "stu_info";
-    private static String STU_SORT = "zstu";
+    private static String STU_SORT = "zstu";//zset的key
     private SimpleDateFormat sp = new SimpleDateFormat("yyyy-MM-dd");
 
     /**
@@ -154,7 +154,6 @@ public class StudentServiceImpl implements StudentService {
         //将uuid，score存入用来分页排序
         Long zadd = jedis.zadd(STU_SORT, Long.valueOf(avgscore), stu_id);
         JedisUtil.releaseReourse(jedis);
-        flag = hmset+zadd;
         return flag;
     }
 
