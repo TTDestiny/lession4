@@ -4,11 +4,11 @@ import java.util.Comparator;
 import java.util.Date;
 
 public class Student implements Comparable<Student> {
-    private String stu_id;
-    private String stu_name;
-    private Date stu_birthday;
-    private String description;
-    private int avgscore;
+    private String stu_id;//学生id
+    private String stu_name;//学生名字
+    private Date stu_birthday;//出生日期
+    private String description;//描述
+    private int avgscore;//平均分数
 
     public Student(String stu_id, String stu_name, Date stu_birthday, String description, int avgscore) {
         this.stu_id = stu_id;
