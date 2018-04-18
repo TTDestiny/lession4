@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>GetStudentInfoServlet</servlet-name>
+    <servlet-class>com.biz.study.servlets.GetAllStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetStudentInfoServlet</servlet-name>
+    <url-pattern>/getAllInfo/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.biz.study.servlets.UpdateStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/updateInfo/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InsertStuInfoServlet</servlet-name>
+    <servlet-class>com.biz.study.servlets.InsertStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertStuInfoServlet</servlet-name>
+    <url-pattern>/insertInfo/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetStuInfoByIdServlet</servlet-name>
+    <servlet-class>com.biz.study.servlets.GetStuInfoByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetStuInfoByIdServlet</servlet-name>
+    <url-pattern>/getOneInfo/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DelStuInfoServlet</servlet-name>
+    <servlet-class>com.biz.study.servlets.DelStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelStuInfoServlet</servlet-name>
+    <url-pattern>/delInfo/*</url-pattern>
+  </servlet-mapping>
+</web-app>
